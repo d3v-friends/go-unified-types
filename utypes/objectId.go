@@ -210,7 +210,7 @@ func ObjectIDRegistry(registry *bsoncodec.Registry) *bsoncodec.Registry {
 /* ------------------------------------------------------------------------------------------------------------ */
 
 func (x *ObjectIDArgs) AppendFilter(filter bson.M, key string) bson.M {
-	if fnPointer.IsNil(x.Equal) {
+	if !fnPointer.IsNil(x.Equal) {
 		filter[key] = x.Equal
 		return filter
 	}
