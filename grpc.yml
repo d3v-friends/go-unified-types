@@ -1,0 +1,6 @@
+proto: "./utypes"
+out: "./"
+package: "utypes"
+include:
+  - "utypes.proto"
+import:

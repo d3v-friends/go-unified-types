@@ -1,0 +1,124 @@
+syntax = "proto3";
+option go_package = "github.com/d3v-friends/go-unified-types/utypes";
+package utypes;
+
+message Empty {}
+
+message Decimal {
+  string v = 1;
+}
+
+message ObjectID {
+  string v = 1;
+}
+
+message RFC3339Time {
+  string v = 1;
+}
+
+message UnixNanoTime {
+  int64 v = 1;
+}
+
+message YMDHTime {
+  string v = 1;
+}
+
+message YMDTime {
+  string v = 1;
+}
+
+message Version {
+  string v = 1;
+}
+
+enum SortDirection {
+  SD_ASC = 0;
+  SD_DESC = 1;
+}
+
+message DecimalArgs {
+  optional Decimal gt = 1;
+  optional Decimal gte = 2;
+  optional Decimal lt = 3;
+  optional Decimal lte = 4;
+  optional Decimal equal = 5;
+  optional Decimal notEqual = 6;
+}
+
+message ObjectIDArgs {
+  optional ObjectID equal = 1;
+  repeated ObjectID in = 2;
+  repeated ObjectID hasAll = 3;
+}
+
+message RFC3339TimeArgs {
+  optional RFC3339Time gt = 1;
+  optional RFC3339Time gte = 2;
+  optional RFC3339Time lt = 3;
+  optional RFC3339Time lte = 4;
+  optional RFC3339Time equal = 5;
+  optional RFC3339Time notEqual = 6;
+}
+
+message UnixNanoTimeArgs {
+  optional UnixNanoTime gt = 1;
+  optional UnixNanoTime gte = 2;
+  optional UnixNanoTime lt = 3;
+  optional UnixNanoTime lte = 4;
+  optional UnixNanoTime equal = 5;
+  optional UnixNanoTime notEqual = 6;
+}
+
+message YMDHArgs {
+  optional YMDHTime gt = 1;
+  optional YMDHTime gte = 2;
+  optional YMDHTime lt = 3;
+  optional YMDHTime lte = 4;
+  optional YMDHTime equal = 5;
+  optional YMDHTime notEqual = 6;
+}
+
+message YMDArgs {
+  optional YMDTime gt = 1;
+  optional YMDTime gte = 2;
+  optional YMDTime lt = 3;
+  optional YMDTime lte = 4;
+  optional YMDTime equal = 5;
+  optional YMDTime notEqual = 6;
+}
+
+message Uint64Args {
+  optional uint64 gt = 1;
+  optional uint64 gte = 2;
+  optional uint64 lt = 3;
+  optional uint64 lte = 4;
+  optional uint64 equal = 5;
+  optional uint64 notEqual = 6;
+}
+
+message Int64Args {
+  optional int64 gt = 1;
+  optional int64 gte = 2;
+  optional int64 lt = 3;
+  optional int64 lte = 4;
+  optional int64 equal = 5;
+  optional int64 notEqual = 6;
+}
+
+message PageArgs {
+  int64 page = 1;
+  int64 size = 2;
+}
+
+message StringArgs{
+  optional string like = 1;
+  optional string exact = 2;
+  repeated string in = 3;
+}
+
+message VersionArgs {
+  optional Version equal = 1;
+  repeated Version in = 2;
+  repeated Version hasAll = 3;
+}
