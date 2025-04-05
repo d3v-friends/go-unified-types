@@ -1,11 +1,11 @@
 module github.com/d3v-friends/go-unified-types
 
-go 1.24.2
+go 1.23.8
 
 require (
 	github.com/99designs/gqlgen v0.17.70
-	github.com/d3v-friends/go-tools v1.0.5
-	github.com/d3v-friends/mango v1.0.17
+	github.com/d3v-friends/go-tools v1.0.6
+	github.com/d3v-friends/mango v1.0.19
 	github.com/shopspring/decimal v1.4.0
 	go.mongodb.org/mongo-driver v1.17.3
 	google.golang.org/protobuf v1.36.6

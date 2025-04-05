@@ -2,10 +2,10 @@ github.com/99designs/gqlgen v0.17.70 h1:xgLIgQuG+Q2L/AE9cW595CT7xCWCe/bpPIFGSfsG
 github.com/99designs/gqlgen v0.17.70/go.mod h1:fvCiqQAu2VLhKXez2xFvLmE47QgAPf/KTPN5XQ4rsHQ=
 github.com/andreyvit/diff v0.0.0-20170406064948-c7f18ee00883 h1:bvNMNQO63//z+xNgfBlViaCIJKLlCJ6/fmUseuG0wVQ=
 github.com/andreyvit/diff v0.0.0-20170406064948-c7f18ee00883/go.mod h1:rCTlJbsFo29Kk6CurOXKm700vrz8f0KW0JNfpkRJY/8=
-github.com/d3v-friends/go-tools v1.0.5 h1:okYeKWYnlKfbyfhU1solTkImmO8zedtsO3uSKJWrryU=
-github.com/d3v-friends/go-tools v1.0.5/go.mod h1:bN84L4K7RhSt/IvVo7ShDgqOC/8GMOTotmIfM4BFPS4=
-github.com/d3v-friends/mango v1.0.17 h1:9wPFt4C1ah2tewtChi9sQHmmaGbtenAuJR8ueMsqqD8=
-github.com/d3v-friends/mango v1.0.17/go.mod h1:+AzCC+Icn8cffDnw4SxGUwetJmu88ljPrYX7Pvwgk1I=
+github.com/d3v-friends/go-tools v1.0.6 h1:qQ63is/YPVtXqFHAmW8TrPR/DiB2KkY2TxR9e9ImTFo=
+github.com/d3v-friends/go-tools v1.0.6/go.mod h1:wyn/zzhMu2PxZ1aSX7eUPMx6XukyECqO/OV4VNpayZ0=
+github.com/d3v-friends/mango v1.0.19 h1:9sS93h4d54HngZUvISpG25KqHwQCtgzszn8vQHi3x4Y=
+github.com/d3v-friends/mango v1.0.19/go.mod h1:Y9PyCsRcxeHl+7XuMiJm2gmN8anFmIr8zCaJCVnTLeM=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/golang/snappy v1.0.0 h1:Oy607GVXHs7RtbggtPBnr2RmDArIsAefDwvrdWvRhGs=
