@@ -4,8 +4,8 @@ go 1.23.8
 
 require (
 	github.com/99designs/gqlgen v0.17.70
-	github.com/d3v-friends/go-tools v1.0.6
-	github.com/d3v-friends/mango v1.0.19
+	github.com/d3v-friends/go-tools v1.0.8
+	github.com/d3v-friends/mango v1.0.22
 	github.com/shopspring/decimal v1.4.0
 	github.com/stretchr/testify v1.10.0
 	go.mongodb.org/mongo-driver v1.17.3
@@ -30,7 +30,7 @@ require (
 	github.com/xdg-go/stringprep v1.0.4 // indirect
 	github.com/youmark/pkcs8 v0.0.0-20240726163527-a2c0da244d78 // indirect
 	golang.org/x/crypto v0.36.0 // indirect
-	golang.org/x/sync v0.12.0 // indirect
-	golang.org/x/text v0.23.0 // indirect
+	golang.org/x/sync v0.13.0 // indirect
+	golang.org/x/text v0.24.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
