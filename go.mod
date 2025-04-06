@@ -7,12 +7,14 @@ require (
 	github.com/d3v-friends/go-tools v1.0.6
 	github.com/d3v-friends/mango v1.0.19
 	github.com/shopspring/decimal v1.4.0
+	github.com/stretchr/testify v1.10.0
 	go.mongodb.org/mongo-driver v1.17.3
 	google.golang.org/protobuf v1.36.6
 	gorm.io/gorm v1.25.12
 )
 
 require (
+	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/golang/snappy v1.0.0 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
@@ -20,6 +22,7 @@ require (
 	github.com/klauspost/compress v1.18.0 // indirect
 	github.com/montanaflynn/stats v0.7.1 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
+	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/sosodev/duration v1.3.1 // indirect
 	github.com/vektah/gqlparser/v2 v2.5.23 // indirect
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
@@ -29,4 +32,5 @@ require (
 	golang.org/x/crypto v0.36.0 // indirect
 	golang.org/x/sync v0.12.0 // indirect
 	golang.org/x/text v0.23.0 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

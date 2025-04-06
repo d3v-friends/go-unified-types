@@ -20,6 +20,8 @@ import (
 
 const ErrInvalidUnixNanoTime = "invalid_unix_nano_time"
 
+var ZeroUnixNanoTime = &UnixNanoTime{V: 0}
+
 func NewUnixNanoTime(vs ...time.Time) *UnixNanoTime {
 	if len(vs) == 1 {
 		return &UnixNanoTime{V: vs[0].UnixNano()}
