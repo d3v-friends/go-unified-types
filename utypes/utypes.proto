@@ -37,6 +37,10 @@ enum SortDirection {
   SD_DESC = 1;
 }
 
+message Bson {
+  bytes v = 1;
+}
+
 message DecimalArgs {
   optional Decimal gt = 1;
   optional Decimal gte = 2;
@@ -50,6 +54,7 @@ message ObjectIDArgs {
   optional ObjectID equal = 1;
   repeated ObjectID in = 2;
   repeated ObjectID hasAll = 3;
+  repeated ObjectID notIn = 4;
 }
 
 message RFC3339TimeArgs {

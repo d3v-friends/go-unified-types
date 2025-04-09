@@ -227,5 +227,11 @@ func (x *ObjectIDArgs) AppendFilter(filter bson.M, key string) bson.M {
 		return filter
 	}
 
+	if len(x.NotIn) != 0 {
+		filter[key] = bson.M{
+			mgOp.Nin: x.NotIn,
+		}
+	}
+
 	return filter
 }
