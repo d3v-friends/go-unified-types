@@ -32,6 +32,10 @@ message Version {
   string v = 1;
 }
 
+message BSON {
+  bytes v = 1;
+}
+
 enum SortDirection {
   SD_ASC = 0;
   SD_DESC = 1;
