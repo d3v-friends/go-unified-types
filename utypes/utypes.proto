@@ -41,10 +41,6 @@ enum SortDirection {
   SD_DESC = 1;
 }
 
-message Bson {
-  bytes v = 1;
-}
-
 message DecimalArgs {
   optional Decimal gt = 1;
   optional Decimal gte = 2;
@@ -130,4 +126,21 @@ message VersionArgs {
   optional Version equal = 1;
   repeated Version in = 2;
   repeated Version hasAll = 3;
+}
+
+message FindOneArgs {
+  optional BSON filter = 1;
+  optional BSON sorter = 2;
+}
+
+message FindAllArgs {
+  optional BSON filter = 1;
+  optional BSON sorter = 2;
+  optional int64 limit = 3;
+}
+
+message FindListArgs {
+  optional BSON filter = 1;
+  optional BSON sorter = 2;
+  PageArgs pager = 3;
 }

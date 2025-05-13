@@ -1,4 +1,5 @@
 #!/bin/zsh
+set -e
 
 GO_DEF_PATH=$1
 
