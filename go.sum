@@ -4,8 +4,8 @@ github.com/andreyvit/diff v0.0.0-20170406064948-c7f18ee00883 h1:bvNMNQO63//z+xNg
 github.com/andreyvit/diff v0.0.0-20170406064948-c7f18ee00883/go.mod h1:rCTlJbsFo29Kk6CurOXKm700vrz8f0KW0JNfpkRJY/8=
 github.com/d3v-friends/go-tools v1.0.11 h1:kGpXnuvDdhXfgMkOWsXEX0+NLSgIIB4Ja4k3/82CfIQ=
 github.com/d3v-friends/go-tools v1.0.11/go.mod h1:wyn/zzhMu2PxZ1aSX7eUPMx6XukyECqO/OV4VNpayZ0=
-github.com/d3v-friends/mango v1.0.26 h1:cj5+6Wav6Ei7a7Syxwa+tgDgEZnzGfbP7pnBkC2+0t0=
-github.com/d3v-friends/mango v1.0.26/go.mod h1:oP/CxOa6FmYCdSVtC5ED5wvO+mAr217T8Py5lBbjqs8=
+github.com/d3v-friends/mango v1.0.27 h1:5K4IisMKcIovxiKtC7uT6+3AYIMaWZXU2mN4Z7lpzYI=
+github.com/d3v-friends/mango v1.0.27/go.mod h1:wIjtPCNuQ9jOepVu91h7CoKmZrNhyWZTWY7hWG3SUak=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/golang/snappy v1.0.0 h1:Oy607GVXHs7RtbggtPBnr2RmDArIsAefDwvrdWvRhGs=

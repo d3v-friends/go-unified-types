@@ -2,6 +2,7 @@ package utypes
 
 import (
 	"bytes"
+	"github.com/d3v-friends/go-tools/fnPointer"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/bsoncodec"
 	"go.mongodb.org/mongo-driver/bson/bsonrw"
@@ -49,6 +50,10 @@ func NewBson[T BsonType](
 func (x *BSON) Raw(
 	registries ...*bsoncodec.Registry,
 ) (res bson.Raw, err error) {
+	if fnPointer.IsNil(x) {
+		return bson.Raw{}, nil
+	}
+
 	var dec *bson.Decoder
 	if dec, err = bson.NewDecoder(bsonrw.NewBSONDocumentReader(x.V)); err != nil {
 		return

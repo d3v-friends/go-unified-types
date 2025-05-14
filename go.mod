@@ -5,7 +5,7 @@ go 1.23.8
 require (
 	github.com/99designs/gqlgen v0.17.73
 	github.com/d3v-friends/go-tools v1.0.11
-	github.com/d3v-friends/mango v1.0.26
+	github.com/d3v-friends/mango v1.0.27
 	github.com/shopspring/decimal v1.4.0
 	github.com/stretchr/testify v1.10.0
 	go.mongodb.org/mongo-driver v1.17.3
