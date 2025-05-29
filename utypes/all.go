@@ -6,6 +6,8 @@ import (
 	"go.mongodb.org/mongo-driver/bson/bsoncodec"
 )
 
+const NilRFC3339TimeString = "2000-01-01T00:00:00Z"
+
 var Registries = []mgConn.CodecRegistry{
 	DecimalRegistry,
 	ObjectIDRegistry,

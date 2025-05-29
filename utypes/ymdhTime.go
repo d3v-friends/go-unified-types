@@ -19,7 +19,7 @@ import (
 const ErrInvalidYMDHTime = "invalid_ymdh_time"
 
 var NilYMDHTime = &YMDHTime{
-	V: "2006-01-02T15:04:05Z07:00",
+	V: NilRFC3339TimeString,
 }
 
 func NewYMDHTime(vs ...time.Time) (res *YMDHTime) {
