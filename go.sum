@@ -2,10 +2,10 @@ github.com/99designs/gqlgen v0.17.73 h1:A3Ki+rHWqKbAOlg5fxiZBnz6OjW3nwupDHEG15gE
 github.com/99designs/gqlgen v0.17.73/go.mod h1:2RyGWjy2k7W9jxrs8MOQthXGkD3L3oGr0jXW3Pu8lGg=
 github.com/andreyvit/diff v0.0.0-20170406064948-c7f18ee00883 h1:bvNMNQO63//z+xNgfBlViaCIJKLlCJ6/fmUseuG0wVQ=
 github.com/andreyvit/diff v0.0.0-20170406064948-c7f18ee00883/go.mod h1:rCTlJbsFo29Kk6CurOXKm700vrz8f0KW0JNfpkRJY/8=
-github.com/d3v-friends/go-tools v1.0.11 h1:kGpXnuvDdhXfgMkOWsXEX0+NLSgIIB4Ja4k3/82CfIQ=
-github.com/d3v-friends/go-tools v1.0.11/go.mod h1:wyn/zzhMu2PxZ1aSX7eUPMx6XukyECqO/OV4VNpayZ0=
-github.com/d3v-friends/mango v1.0.27 h1:5K4IisMKcIovxiKtC7uT6+3AYIMaWZXU2mN4Z7lpzYI=
-github.com/d3v-friends/mango v1.0.27/go.mod h1:wIjtPCNuQ9jOepVu91h7CoKmZrNhyWZTWY7hWG3SUak=
+github.com/d3v-friends/go-tools v1.0.12 h1:gQfFuMktyXdkEL19L4MVCqYnCuNPQTLFtEkneAelzIY=
+github.com/d3v-friends/go-tools v1.0.12/go.mod h1:wyn/zzhMu2PxZ1aSX7eUPMx6XukyECqO/OV4VNpayZ0=
+github.com/d3v-friends/mango v1.0.31 h1:IYoSfqUjSnb6+INn2u+v5q/I7kgtQOC3Ax0qoEWrMTI=
+github.com/d3v-friends/mango v1.0.31/go.mod h1:wIjtPCNuQ9jOepVu91h7CoKmZrNhyWZTWY7hWG3SUak=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/golang/snappy v1.0.0 h1:Oy607GVXHs7RtbggtPBnr2RmDArIsAefDwvrdWvRhGs=
@@ -82,5 +82,5 @@ gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
 gopkg.in/yaml.v3 v3.0.1/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
-gorm.io/gorm v1.26.1 h1:ghB2gUI9FkS46luZtn6DLZ0f6ooBJ5IbVej2ENFDjRw=
-gorm.io/gorm v1.26.1/go.mod h1:8Z33v652h4//uMA76KjeDH8mJXPm1QNCYrMeatR0DOE=
+gorm.io/gorm v1.30.0 h1:qbT5aPv1UH8gI99OsRlvDToLxW5zR7FzS9acZDOZcgs=
+gorm.io/gorm v1.30.0/go.mod h1:8Z33v652h4//uMA76KjeDH8mJXPm1QNCYrMeatR0DOE=

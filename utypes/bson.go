@@ -2,6 +2,7 @@ package utypes
 
 import (
 	"bytes"
+	"github.com/d3v-friends/go-tools/fnError"
 	"github.com/d3v-friends/go-tools/fnPointer"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/bsoncodec"
@@ -47,11 +48,13 @@ func NewBson[T BsonType](
 	return
 }
 
-func (x *BSON) Raw(
+func (x *BSON) Decode(
+	value any,
 	registries ...*bsoncodec.Registry,
-) (res bson.Raw, err error) {
+) (err error) {
 	if fnPointer.IsNil(x) {
-		return bson.Raw{}, nil
+		err = fnError.New("bson_is_nil")
+		return
 	}
 
 	var dec *bson.Decoder
@@ -65,10 +68,17 @@ func (x *BSON) Raw(
 		}
 	}
 
-	res = bson.Raw{}
-	if err = dec.Decode(&res); err != nil {
+	if err = dec.Decode(value); err != nil {
 		return
 	}
 
+	return
+}
+
+func (x *BSON) Raw(registries ...*bsoncodec.Registry) (raw bson.Raw, err error) {
+	raw = bson.Raw{}
+	if err = x.Decode(&raw, registries...); err != nil {
+		return
+	}
 	return
 }

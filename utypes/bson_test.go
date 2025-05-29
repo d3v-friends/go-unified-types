@@ -19,8 +19,8 @@ func TestBson(test *testing.T) {
 		var value, err = utypes.NewBson(b)
 		assert.NoError(t, err)
 
-		var raw bson.Raw
-		raw, err = value.Raw()
+		var raw = bson.Raw{}
+		err = value.Decode(&raw)
 		assert.NoError(t, err)
 
 		var rawValue = raw.Lookup(key)
@@ -38,8 +38,8 @@ func TestBson(test *testing.T) {
 		var value, err = utypes.NewBson(b, registry)
 		assert.NoError(t, err)
 
-		var raw bson.Raw
-		raw, err = value.Raw(registry)
+		var raw = bson.Raw{}
+		err = value.Decode(&raw, registry)
 		assert.NoError(t, err)
 
 		var parsedId = &utypes.ObjectID{}

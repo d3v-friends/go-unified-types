@@ -18,6 +18,10 @@ import (
 
 const ErrInvalidYMDHTime = "invalid_ymdh_time"
 
+var NilYMDHTime = &YMDHTime{
+	V: "2006-01-02T15:04:05Z07:00",
+}
+
 func NewYMDHTime(vs ...time.Time) (res *YMDHTime) {
 	var t time.Time
 	if len(vs) == 1 {

@@ -18,6 +18,10 @@ import (
 
 const ErrInvalidRFC3339Time = "invalid_rfc3339_time"
 
+var NilRFC3339Time = &RFC3339Time{
+	V: "2006-01-02T15:04:05Z07:00",
+}
+
 func NewRFC3339Time(vs ...time.Time) *RFC3339Time {
 	if len(vs) == 1 {
 		return &RFC3339Time{

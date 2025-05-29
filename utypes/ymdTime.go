@@ -17,6 +17,10 @@ import (
 
 const ErrInvalidYMDTime = "invalid_ymd_time"
 
+var NilYMDTime = &YMDTime{
+	V: "2006-01-02T15:04:05Z07:00",
+}
+
 func NewYMDTime(stdHour ...int64) (res *YMDTime) {
 	return NewYMDTimeByTime(time.Now(), stdHour...)
 }
