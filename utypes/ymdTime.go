@@ -69,7 +69,7 @@ func UnmarshalYMDTime(v any) (res *YMDTime, err error) {
 	switch t := v.(type) {
 	case string:
 		var to time.Time
-		if to, err = time.Parse(time.RFC3339, t); err == nil {
+		if to, err = time.Parse(time.RFC3339, t); err != nil {
 			return
 		}
 
