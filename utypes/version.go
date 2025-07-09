@@ -109,7 +109,9 @@ func (x *VersionArgs) AppendFilter(filter bson.M, key string) bson.M {
 	}
 
 	if len(x.HasAll) != 0 {
-		filter[key] = x.HasAll
+		filter[key] = bson.M{
+			mgOp.All: x.HasAll,
+		}
 		return filter
 	}
 

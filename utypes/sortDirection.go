@@ -2,7 +2,7 @@ package utypes
 
 import "github.com/d3v-friends/mango/mgCodec"
 
-func (x SortDirection) GetDirection() int64 {
+func (x SortDirection) GetDirection() int32 {
 	switch x {
 	case SortDirection_SD_ASC:
 		return 1
