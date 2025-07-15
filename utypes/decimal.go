@@ -93,6 +93,16 @@ func (x *Decimal) Neg() (dec *Decimal, err error) {
 	return
 }
 
+func (x *Decimal) GetValue(def ...*Decimal) *Decimal {
+	if x == nil {
+		if len(def) == 1 {
+			return def[0]
+		}
+		return ZeroDecimal
+	}
+	return x
+}
+
 /* ------------------------------------------------------------------------------------------------------------ */
 
 func MarshalDecimal(v *Decimal) graphql.Marshaler {
