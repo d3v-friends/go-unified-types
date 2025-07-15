@@ -83,6 +83,16 @@ func (x *Decimal) Value() (res driver.Value, err error) {
 	return
 }
 
+func (x *Decimal) Neg() (dec *Decimal, err error) {
+	var d decimal.Decimal
+	if d, err = x.Decimal(); err != nil {
+		return
+	}
+
+	dec = NewDecimal(d.Neg())
+	return
+}
+
 /* ------------------------------------------------------------------------------------------------------------ */
 
 func MarshalDecimal(v *Decimal) graphql.Marshaler {
